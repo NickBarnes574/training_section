@@ -28,12 +28,12 @@ function(add_remote_executables)
 
     add_target(
     #   [ FIELD ]-----------[ VALUE ]
-        TARGET_NAME         bsle_server
+        TARGET_NAME         test_remote
         ENDPOINT            remote
         TARGET_TYPE         EXE
-        SOURCE_DIR          projects/BSLE
-        DESTINATION_DIR     projects/BSLE
-        LIBRARIES           Common Math DSA Threading Networking
+        SOURCE_DIR          projects/test_project
+        DESTINATION_DIR     projects/test_project
+        LIBRARIES           Common
     )
 
 endfunction()

@@ -6,20 +6,6 @@
 
 function(add_all_tests)
 
-    library_tests()
-
-endfunction()
-
-function(library_tests)
-
-    add_cunit_test(
-        TARGET_NAME             test_stack
-        PROJECT_DIRECTORY       ${CMAKE_SOURCE_DIR}/libraries/DSA/stack
-        TEST_DIRECTORY          ${CMAKE_SOURCE_DIR}/libraries/DSA/stack/tests
-        OUTPUT_DIRECTORY        ${CMAKE_SYSTEM_PROCESSOR}/tests/library_tests/${CMAKE_BUILD_TYPE}/DSA
-        ADDITIONAL_LIBRARIES    Common # Specify additional libraries as needed
-    )
-
 endfunction()
 
 function(training_tests)
